@@ -70,4 +70,21 @@ This MySQL project manages users, products, categories, orders, and order items.
 ---
 ---
 
+## 1. Database Tables
+
+**Users Table**  
+```sql
+SELECT * FROM users;
+```
+---
+```sql
+SELECT * FROM categories;
+```
+![Caregories Table](assets/categoriestable.png)
+
+---
+```sql
+SELECT * FROM products;
+```
+![Products Table](assets/productstable.png)
 
