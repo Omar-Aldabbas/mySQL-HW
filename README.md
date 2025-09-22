@@ -113,21 +113,21 @@ Query: Select product info
 SELECT name, price, stock FROM products;
 ```
 
-![Part 3a Table](assets/part_3_a_table.png)
+![Part 3a Table](assets/part%203%20a%20table.png)
 
 Query: Orders of user_id = 1
 ```sql
 SELECT * FROM orders WHERE user_id = 1;
 ```
 
-![Part 3b Table](assets/part_3_b_table.png)
+![Part 3b Table](assets/part%203%20b%20table.png)
 
 Query: Products in category_id = 2
 ```sql
 SELECT name, price, stock FROM products WHERE category_id = 2;
 ```
 
-![Part 3c Table](assets/part_3_c_table.png)
+![Part 3c Table](assets/part%203%20c%20table.png)
 
 3. Part 4: Aggregations and Reports
 
@@ -144,7 +144,7 @@ GROUP BY o.order_id, u.name
 ORDER BY o.order_id;
 ```
 
-![Part 4a Table](assets/part_4_a_table.png)
+![Part 4a Table](assets/part%204%20a%20table.png)
 
 Query: Most sold product
 ```sql
@@ -158,7 +158,7 @@ ORDER BY total_quantity_sold DESC
 LIMIT 1;
 ```
 
-![Part 4b Table](assets/part_4_b_table.png)
+![Part 4b Table](assets/part%204%20b%20table.png)
 
 Query: Number of orders per user
 ```sql
@@ -171,7 +171,7 @@ GROUP BY u.name
 ORDER BY orders_count DESC;
 ```
 
-![Part 4c Table](assets/part_4_c_table.png)
+![Part 4c Table](assets/part%204%20c%20table.png)
 
 Query: Order items with total price
 ```sql
@@ -187,7 +187,7 @@ JOIN products p ON oi.product_id = p.product_id
 ORDER BY o.order_id, oi.order_item_id;
 ```
 
-![Part 4d Table](assets/part_4_d_table.png)
+![Part 4d Table](assets/part%204%20d%20table.png)
 
 4. Part 5: Updates and Deletes
 
@@ -197,7 +197,7 @@ UPDATE products SET stock = stock - 2 WHERE product_id = 1;
 SELECT * FROM products WHERE product_id = 1;
 ```
 
-![Part Optional a Table](assets/part_optional_a_table.png)
+![Part Optional a Table](assets/part%20optional%20a%20table.png)
 
 Update order status
 ```sql
@@ -205,7 +205,7 @@ UPDATE orders SET status = 'Shipped' WHERE order_id = 3 AND status = 'Pending';
 SELECT * FROM orders WHERE order_id = 1;
 ```
 
-![Part Optional b Table 1](assets/part_optional_b_table_1.png)
+![Part Optional b Table 1](assets/part%20optional%20b%20table%201.png)
 
 Delete a product
 ```sql
@@ -213,7 +213,7 @@ DELETE FROM products WHERE product_id = 10;
 SELECT * FROM products WHERE product_id = 10;
 ```
 
-![Part Optional b Table 2](assets/part_optional_b_table_2.png)
+![Part Optional b Table 2](assets/part%20optional%20b%20table%202.png)
 
 5. Views and Triggers
 
@@ -235,7 +235,7 @@ JOIN products p ON oi.product_id = p.product_id;
 SELECT * FROM order_full_details;
 ```
 
-![Part Optional b Table 3](assets/part_optional_b_table_3.png)
+![Part Optional b Table 3](assets/part%20optional%20b%20table%203.png)
 
 Trigger: Check stock before inserting order item
 ```sql
