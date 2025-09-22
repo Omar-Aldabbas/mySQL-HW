@@ -265,7 +265,7 @@ END$$
 DELIMITER ;
 ```
 
-![Part Optional c Table](assets/part optional c table.png)
+![Part Optional c Table](assets/part%20optional%20c%20table.png)
 
 
 This README:
