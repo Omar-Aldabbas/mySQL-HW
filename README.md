@@ -269,8 +269,7 @@ DELIMITER ;
 
 
 This README:
-
-- Keeps **all your SQL code** intact.  
+ 
 - Uses the **screenshots you already have** in `assets/`.  
 - Shows **query results or table structure** visually.  
 - Combines **all parts in a single file** for easy reference.  
